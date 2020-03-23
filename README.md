@@ -13,7 +13,8 @@ La principal diferencia entre los dos sumadores de un bit es que el primitivo (s
 suma los bit mediante el uso de compuertas logicas las cuales realizan la operacion mediante "Algebra Boolena" 
 mientras que el sumador (sum1bcc.v) lo hace mediante el uso de registros y la alteracion constate mediante
 una operacion de suma basica.
-```` verilog
+``` verilog
+
 module sum1bcc_primitive (A, B, Ci,Cout,S);
 
 
