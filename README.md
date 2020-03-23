@@ -235,3 +235,7 @@ initial begin: TEST_CASE
 
 endmodule
 ```
+errores durante la simulacion Johan Castellanos: No me permite simular cuando le agrego
+```verilog
+$dumpvars(-1, uut);
+```
