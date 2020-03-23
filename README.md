@@ -60,12 +60,11 @@ endmodule
 
 
 // la diferencia con (sum1bcc.v) es que este no hace uso de memorias por lo que la operacion se realiza unicamente con operadores logicos y entradas.
-
-//la diferencia con (sum1bcc.v) es que este no hace uso de memorias por lo que depende unicamente de operadores logicos y entradas
-
 ```
+![Logica combinacional](https://github.com/unal-edigital1-2020-1/lab01-sumador-grupo-05/blob/master/resources/Sumador.png)
 
 * Archivo TestBench
+
 ```verilog
 module sum1bcc_primitive_TB;
 
@@ -75,9 +74,7 @@ module sum1bcc_primitive_TB;
   wire out;
   wire z;
 
-
 sum1bcc_primitive uut(x, y, c,out,z);
-
 
 initial begin
 x=0; y=0; c=0; #3;
@@ -89,8 +86,6 @@ x=1; y=0; c=1; #3;
 x=1; y=1; c=0; #3;
 x=1; y=1; c=1; #3;
 
-
-
 end
 
 initial begin: TEST_CASE
@@ -100,10 +95,6 @@ initial begin: TEST_CASE
    end
 
 endmodule
-```
-errores durante la simulacion Johan Castellanos: No me permite simular cuando le agrego
-```verilog
-$dumpvars(-1, uut);
 ```
 ### sum1bcc.v
 Suma dos bits mediante el uso de un registro el  cual guarda los datos de una operación,la operacion se ejecuta
@@ -146,9 +137,7 @@ module sum1bcc_TB;
   wire out;
   wire z;
 
-
 sum1bcc uut(x, y, c,out,z);
-
 
 initial begin
 x=0; y=0; c=0; #3;
@@ -160,8 +149,6 @@ x=1; y=0; c=1; #3;
 x=1; y=1; c=0; #3;
 x=1; y=1; c=1; #3;
 
-
-
 end
 
 initial begin: TEST_CASE
@@ -172,18 +159,13 @@ initial begin: TEST_CASE
 
 endmodule //
 ```
-errores durante la simulacion Johan Castellanos: No me permite simular cuando le agrego
 
-```verilog
-$dumpvars(-1, uut);
-```
 ## Sumador de 4 bits
 Es un sumador el cual funciona mediante el instanciamiento de cuatro sumadores de un solo bit,
 estos actuan individualmente en la suma de un bit y su resultado es tomado para dar una respuesta en cuatro bits.
 ```verilog
 `timescale 1ns / 1ps
 module sum4b(xi, yi,co,zi);
-
 
   input [3 :0] xi; // declara xi como una input de 4 bits
   input [3 :0] yi; // declara yi como una input de 4 bits
@@ -197,8 +179,6 @@ module sum4b(xi, yi,co,zi);
   sum1bcc s1 (.A(xi[1]), .B(yi[1]), .Ci(c1), .Cout(c2) ,.S(zi[1]));
   sum1bcc s2 (.A(xi[2]), .B(yi[2]), .Ci(c2), .Cout(c3) ,.S(zi[2]));
   sum1bcc s3 (.A(xi[3]), .B(yi[3]), .Ci(c3), .Cout(co) ,.S(zi[3]));
-
-
 
 endmodule
 ```
@@ -234,7 +214,6 @@ module sum4b_TB;
     end
   end      
 
-
 initial begin: TEST_CASE
      $dumpfile("sum4b_TB.vcd");
      $dumpvars(-1, uut);
@@ -243,10 +222,7 @@ initial begin: TEST_CASE
 
 endmodule
 ```
-errores durante la simulacion Johan Castellanos: No me permite simular cuando le agrego
-```verilog
-$dumpvars(-1, uut);
-```
+
 ### Respuesta del sumador de 4 bits
 ![Sumador 4bits respuesta](https://github.com/unal-edigital1-2020-1/lab01-sumador-grupo-05/blob/master/resources/cuatro%20bits.png)
 
