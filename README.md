@@ -62,6 +62,8 @@ endmodule
 
 ![Lógica combinacional](https://github.com/unal-edigital1-2020-1/lab01-sumador-grupo-05/blob/master/resources/Sumador.png)
 
+Lógica combinacional de un sumador de un bit
+
 * Archivo TestBench
 ```verilog
 module sum1bcc_primitive_TB;
