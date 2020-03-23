@@ -18,7 +18,9 @@ una operacion de suma basica.
 
 Es un sumador bit a bit en el cual se hacen uso de operadores logicos y cables para dar una respuesta de una suma de bits
 ![Sumador 1bit](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab01-sumador1b/doc/sum1bPuertas.jpg)
- ¨Tomado de :Laboratorio 01: introducción al HDL-Propiedad de #### ferney alberto beltran molina¨
+
+
+ ¨Tomado de :Laboratorio 01: introducción al HDL-Propiedad de Ferney Alberto Beltran Molina¨
 ``` verilog
 
 module sum1bcc_primitive (A, B, Ci,Cout,S);
