@@ -41,7 +41,42 @@ module sum1bcc_primitive (A, B, Ci,Cout,S);
 endmodule //la diferencia con (sum1bcc.v) es que este no hace uso de memorias por lo que depende unicamente de operadores logicos y entradas
 ```
 ![Lógica combinacional](C:\Users\Miguel Garcia\Desktop\UN\ELECTRONICA DIGITAL I\lab01-sumador-grupo-05 "Lógica combinacional")
+*Archivo TestBench
+```verilog
+module sum1bcc_primitive_TB;
 
+  reg x;
+  reg y;
+  reg c;
+  wire out;
+  wire z;
+
+
+sum1bcc_primitive uut(x, y, c,out,z);
+
+
+initial begin
+x=0; y=0; c=0; #3;
+x=0; y=0; c=1; #3;
+x=0; y=1; c=0; #3;
+x=0; y=1; c=1; #3;
+x=1; y=0; c=0; #3;
+x=1; y=0; c=1; #3;
+x=1; y=1; c=0; #3;
+x=1; y=1; c=1; #3;
+
+
+
+end
+
+initial begin: TEST_CASE
+     $dumpfile("sum1bcc_primitive_TB.vcd");
+     $dumpvars(-1, uut);
+     #(200) $finish;
+   end
+
+endmodule
+```
 # sum1bcc.v
 ```verilog
 module sum1bcc (A, B, Ci,Cout,S);
@@ -70,4 +105,40 @@ module sum1bcc (A, B, Ci,Cout,S);
 endmodule
 // la diferencia con (sum1bcc_primitive.v) es que este hace uso de memorias para evitar el uso de operadores logicos
 // se hace el uso de memoria para no utilizar los operadores logicos and,  xor,  or.  
+```
+*Archivo TestBench
+``` verilog
+module sum1bcc_TB;
+
+  reg x;
+  reg y;
+  reg c;
+  wire out;
+  wire z;
+
+
+sum1bcc uut(x, y, c,out,z);
+
+
+initial begin
+x=0; y=0; c=0; #3;
+x=0; y=0; c=1; #3;
+x=0; y=1; c=0; #3;
+x=0; y=1; c=1; #3;
+x=1; y=0; c=0; #3;
+x=1; y=0; c=1; #3;
+x=1; y=1; c=0; #3;
+x=1; y=1; c=1; #3;
+
+
+
+end
+
+initial begin: TEST_CASE
+     $dumpfile("sum1bcc_TB.vcd");
+     $dumpvars(-1, uut);
+     #(200) $finish;
+   end
+
+endmodule //
 ```
