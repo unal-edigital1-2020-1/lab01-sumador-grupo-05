@@ -15,7 +15,7 @@ mientras que el sumador (sum1bcc.v) lo hace mediante el uso de registros y la al
 una operacion de suma basica.
 
 # sum1bcc_primitive.v
-~~~
+```verilog
 module sum1bcc_primitive (A, B, Ci,Cout,S);
 
   input  A; //con el input podemos declarar 3 entradas y con output 2 salidas
@@ -39,7 +39,7 @@ module sum1bcc_primitive (A, B, Ci,Cout,S);
   or (Cout,cout_t,a_ab);
   
 endmodule //la diferencia con (sum1bcc.v) es que este no hace uso de memorias por lo que depende unicamente de operadores logicos y entradas
-~~~
+```
 ![Lógica combinacional](C:\Users\Miguel Garcia\Desktop\UN\ELECTRONICA DIGITAL I\lab01-sumador-grupo-05 "Lógica combinacional")
 
 # sum1bcc.v
