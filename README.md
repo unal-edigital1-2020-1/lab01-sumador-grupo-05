@@ -57,8 +57,8 @@ module sum1bcc (A, B, Ci,Cout,S);
   end
   
 endmodule
-```
 // la diferencia con (sum1bcc_primitive.v) es que este hace uso de memorias para evitar el uso de operadores logicos
+```
 *Analice la simulación de cada uno de los archivos y compruebe que el sumador funciona correctamente.
 
 *Cree el nuevo proyecto HDL para el sumador de 4 bit, onde el top sea sum4bcc.v e instancie el sumador de 1 bit sum1bcc.v
