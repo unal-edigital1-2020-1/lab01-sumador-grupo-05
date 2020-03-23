@@ -20,7 +20,8 @@ Es un sumador bit a bit en el cual se hacen uso de operadores logicos y cables p
 ![Sumador 1bit](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab01-sumador1b/doc/sum1bPuertas.jpg)
 
 
- ¨Tomado de :Laboratorio 01: introducción al HDL-Propiedad de Ferney Alberto Beltran Molina¨
+ ¨Tomado de Laboratorio 01: introducción al HDL-"https://github.com/unal-edigital1-2020-1/page/blob/master/labs/lab01.md"
+ -Propiedad de Ferney Alberto Beltran Molina¨
 ``` verilog
 
 module sum1bcc_primitive (A, B, Ci,Cout,S);
