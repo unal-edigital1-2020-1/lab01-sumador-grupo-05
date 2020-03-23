@@ -1,11 +1,8 @@
 module sum1bcc_primitive (A, B, Ci,Cout,S);
 
 
-  input  A;  // declaramos las entradas A, B ,Ci
-=======
-		//con el input podemos declarar 3 entradas y con output 2 salidas
-  input  A;
-  input  B;
+  input  A;  // declaramos las entradas A, B ,Ci	
+  input  B;//con el input podemos declarar 3 entradas y con output 2 salidas
   input  Ci;
   output Cout;  // Output ---> declara las salidas Cout y S
   output S;
