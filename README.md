@@ -42,7 +42,7 @@ endmodule //la diferencia con (sum1bcc.v) es que este no hace uso de memorias po
 ```
 ![Lógica combinacional](C:\Users\Miguel Garcia\Desktop\UN\ELECTRONICA DIGITAL I\lab01-sumador-grupo-05 "Lógica combinacional")
 
-*Archivo TestBench
+* Archivo TestBench
 ```verilog
 module sum1bcc_primitive_TB;
 
