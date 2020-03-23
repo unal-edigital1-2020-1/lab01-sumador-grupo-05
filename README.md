@@ -96,10 +96,6 @@ initial begin: TEST_CASE
 
 endmodule
 ```
-errores durante la simulacion Johan Castellanos: No me permite simular cuando le agrego
-```verilog
-$dumpvars(-1, uut);
-```
 ### sum1bcc.v
 ```verilog
 module sum1bcc (A, B, Ci,Cout,S);
@@ -223,9 +219,5 @@ initial begin: TEST_CASE
    end
 
 endmodule
-```
-errores durante la simulacion Johan Castellanos: No me permite simular cuando le agrego
-```verilog
-$dumpvars(-1, uut);
 ```
 ![Sumador 4bits respuesta](https://github.com/unal-edigital1-2020-1/lab01-sumador-grupo-05/blob/master/resources/cuatro%20bits.png)
