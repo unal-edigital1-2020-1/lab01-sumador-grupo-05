@@ -40,5 +40,6 @@ module sum1bcc_primitive (A, B, Ci,Cout,S);
   
 endmodule //la diferencia con (sum1bcc.v) es que este no hace uso de memorias por lo que depende unicamente de operadores logicos y entradas
 ~~~
+![Lógica combinacional](C:\Users\Miguel Garcia\Desktop\UN\ELECTRONICA DIGITAL I\lab01-sumador-grupo-05 "Lógica combinacional")
 
 # sum1bcc.v
