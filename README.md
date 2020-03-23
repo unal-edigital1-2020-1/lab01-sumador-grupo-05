@@ -107,7 +107,7 @@ endmodule
 // la diferencia con (sum1bcc_primitive.v) es que este hace uso de memorias para evitar el uso de operadores logicos
 // se hace el uso de memoria para no utilizar los operadores logicos and,  xor,  or.  
 ```
-*Archivo TestBench
+* Archivo TestBench
 ``` verilog
 module sum1bcc_TB;
 
