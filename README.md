@@ -5,5 +5,5 @@ En esta plantilla debe adicionar la documentación del laboratorio
 
 * Miguel Andres Garcia Saenz
 * Johan Leonardo Castellanos Ruiz
-* Nombres y Apellidos Estudiante 3
+* Jefersson Garzón Romero
 
