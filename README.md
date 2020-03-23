@@ -19,7 +19,6 @@ una operacion de suma basica.
 
 module sum1bcc_primitive (A, B, Ci,Cout,S);
 
-
   input  A;  // declaramos las entradas A, B ,Ci
 
 		//con el input podemos declarar 3 entradas y con output 2 salidas
@@ -28,8 +27,6 @@ module sum1bcc_primitive (A, B, Ci,Cout,S);
   input  Ci;
   output Cout;  // Output ---> declara las salidas Cout y S
   output S;
-
-
 
   wire a_ab;    // wire ---> interconexion de las compuertas logicas 
   wire x_ab;
@@ -58,10 +55,10 @@ endmodule
 
 ```
 
-
 ![Lógica combinacional](C:\Users\Miguel Garcia\Desktop\UN\ELECTRONICA DIGITAL I\lab01-sumador-grupo-05 "Lógica combinacional")
 
 * Archivo TestBench
+
 ```verilog
 module sum1bcc_primitive_TB;
 
@@ -71,9 +68,7 @@ module sum1bcc_primitive_TB;
   wire out;
   wire z;
 
-
 sum1bcc_primitive uut(x, y, c,out,z);
-
 
 initial begin
 x=0; y=0; c=0; #3;
@@ -85,8 +80,6 @@ x=1; y=0; c=1; #3;
 x=1; y=1; c=0; #3;
 x=1; y=1; c=1; #3;
 
-
-
 end
 
 initial begin: TEST_CASE
@@ -97,11 +90,9 @@ initial begin: TEST_CASE
 
 endmodule
 ```
-errores durante la simulacion Johan Castellanos: No me permite simular cuando le agrego
-```verilog
-$dumpvars(-1, uut);
-```
+
 ### sum1bcc.v
+
 ```verilog
 module sum1bcc (A, B, Ci,Cout,S);
   //se declaran las entradas siendo dos entradas (A y B) variables (ci) siendo la carga del bit de entrada
@@ -130,7 +121,9 @@ endmodule
 // la diferencia con (sum1bcc_primitive.v) es que este hace uso de memorias para evitar el uso de operadores logicos
 // se hace el uso de memoria para no utilizar los operadores logicos and,  xor,  or.  
 ```
+
 * Archivo TestBench
+
 ``` verilog
 module sum1bcc_TB;
 
@@ -140,9 +133,7 @@ module sum1bcc_TB;
   wire out;
   wire z;
 
-
 sum1bcc uut(x, y, c,out,z);
-
 
 initial begin
 x=0; y=0; c=0; #3;
@@ -154,8 +145,6 @@ x=1; y=0; c=1; #3;
 x=1; y=1; c=0; #3;
 x=1; y=1; c=1; #3;
 
-
-
 end
 
 initial begin: TEST_CASE
@@ -166,12 +155,8 @@ initial begin: TEST_CASE
 
 endmodule //
 ```
-errores durante la simulacion Johan Castellanos: No me permite simular cuando le agrego
-
-```verilog
-$dumpvars(-1, uut);
-```
 ## Sumador de 4 bits
+
 ```verilog
 `timescale 1ns / 1ps
 module sum4b(xi, yi,co,zi);
