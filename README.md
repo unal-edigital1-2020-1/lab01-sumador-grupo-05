@@ -5,7 +5,7 @@ En esta plantilla debe adicionar la documentación del laboratorio
 
 * Miguel Andres Garcia Saenz
 * Johan Leonardo Castellanos Ruiz
-* Jefersson Garzón Romero
+*  Jefersson Garzón Romero
 
 ## Diferencias entre sum1bcc_primitive.v Y sum1bcc.v
 
