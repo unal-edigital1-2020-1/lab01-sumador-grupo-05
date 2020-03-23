@@ -14,7 +14,7 @@ suma los bit mediante el uso de compuertas logicas las cuales realizan la operac
 mientras que el sumador (sum1bcc.v) lo hace mediante el uso de registros y la alteracion constate mediante
 una operacion de suma basica.
 
-# sum1bcc_primitive.v
+### sum1bcc_primitive.v
 ```verilog
 module sum1bcc_primitive (A, B, Ci,Cout,S);
 
@@ -82,7 +82,7 @@ errores durante la simulacion Johan Castellanos: No me permite simular cuando le
 ```verilog
 $dumpvars(-1, uut);
 ```
-# sum1bcc.v
+### sum1bcc.v
 ```verilog
 module sum1bcc (A, B, Ci,Cout,S);
   //se declaran las entradas siendo dos entradas (A y B) variables (ci) siendo la carga del bit de entrada
