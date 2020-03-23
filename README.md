@@ -4,6 +4,6 @@ laboratorio 01 introducción a HDL
 En esta plantilla debe adicionar la documentación del laboratorio
 
 * Miguel Andres Garcia Saenz
-* Nombres y Apellidos Estudiante 2
+* Johan Leonardo Castellanos Ruiz
 * Nombres y Apellidos Estudiante 3
 
