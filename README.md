@@ -249,3 +249,9 @@ $dumpvars(-1, uut);
 ```
 ### Respuesta del sumador de 4 bits
 ![Sumador 4bits respuesta](https://github.com/unal-edigital1-2020-1/lab01-sumador-grupo-05/blob/master/resources/cuatro%20bits.png)
+
+* Como obsevamos en la imagen el valor "1" esta representado por un pulso y el valor "0" esta representado por una linea baja
+* Las entradas "xi" y "yi" se componen de 4 bits desde [0 : 3] 
+* La Salida "zi" se compone de 4 bits
+- Como vemos en el ejemplo en el tiempo = 133.333ns los valores que toma cada uno se muestra en la parte izquierda podemos 
+observar que la suma de bit a bit se ve mediante la ecuacion zi[0]=xi+yi+ci donde ci es una carga de la suma de bits anterior.
