@@ -247,4 +247,5 @@ errores durante la simulacion Johan Castellanos: No me permite simular cuando le
 ```verilog
 $dumpvars(-1, uut);
 ```
+### Respuesta del sumador de 4 bits
 ![Sumador 4bits respuesta](https://github.com/unal-edigital1-2020-1/lab01-sumador-grupo-05/blob/master/resources/cuatro%20bits.png)
